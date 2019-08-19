@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let arr = ['a','b','a','c','d','a'];
+let num =prompt("nhap ki tu kiem tra:");
+let dem=0;
+function check2(arr) {
+    for(let i = 0;i<arr.length;i++){
+        if(arr[i]===num){
+            dem++;
+        }
+    }
+}
+check2(arr);
+if(dem>0){
+    document.write(dem);
+}else if(dem===0){
+    document.write("-1");
+}
+</script>
+</body>
+</html>
